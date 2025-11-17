@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #0d0d11;
+  --card: #15151c;
+  --purple: #b144ff;
+  --purple2: #9b3bff;
+  --pink: #ff00e6;
+  --text: #ffffff;
+  --text2: #b4b4b4;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Suavidade */
+* {
+  transition: all 0.15s ease;
+}
+
+/* Scrollbar minimalista */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Inputs gerais */
+input, select, button {
+  outline: none;
+}
+
+/* Efeito Glow suave */
+.glow {
+  box-shadow: 0 0 12px var(--pink);
+}
+
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Animação fade */
+.fade-in {
+  animation: fade .3s ease;
+}
+@keyframes fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
